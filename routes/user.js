@@ -1,11 +1,10 @@
 import express from "express";
 import {  getMyProfile, login, register,logout } from "../controllers/user.js";
-import { isAuthenticated } from "../middlewares/Auth.js";
-//import {User} from "../models/user.js"
+import { isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
 
-//router.get("/all",getAllUsers)
+
 
 
 router.post("/new", register )
